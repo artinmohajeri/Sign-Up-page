@@ -1,0 +1,125 @@
+body{
+    margin: 0px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    /* background-image: linear-gradient(45deg,rgb(7, 7, 173),black,#8121cd); */
+    background-color: rgb(0, 0, 0);
+    min-height: 100vh;
+}
+.form-container{
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    align-items: center;
+}
+.form{
+    box-shadow: 0 0 17px 0 rgb(125, 125, 125);
+    width: 500px;
+    height: 650px;
+    background-color: rgb(255, 255, 255);
+    border-radius:10px ;
+    margin: 30px auto;
+    animation-name: formAnimation;
+    animation-duration: 2s;
+}
+.title{
+    border-top-right-radius: 8px;
+    border-top-left-radius: 8px;
+    display: flex;
+    align-items: center;
+    color: rgb(0, 0, 0);
+    width: 100%;
+    height: 40px;
+    background-color: #f8d200;
+    animation-name: formAnimation;
+    animation-duration: 2s;
+}
+.title span{
+    margin-left: 12px;
+}
+.title i{
+    margin-left: 15px;
+}
+.title-2{
+    color: #323232;
+    font-size: 40px;
+    width: 100%;
+    height: 80px;
+    display: flex;
+    align-items: center;
+}
+.title-2 span{
+    margin-left: 40px;
+}
+.title-3{
+    animation-name: formAnimation;
+    animation-duration: 2s;
+    width: 100%;
+    height: 50px;
+}
+.title-3 span{
+    margin-left: 40px;
+    font-size: 18px;
+    color:#505050 ;
+}
+.title-3 a{
+    color: #7b6900;
+    text-decoration: none;
+}
+.title-3 a:hover{
+    text-decoration: underline;
+}
+.email-div{
+    width: 100%;
+}
+input{
+    animation-name: formAnimation;
+    animation-duration: 2s;
+    display: inline-block;
+    margin-left: 40px;
+    width: 80%;
+    height: 38px;
+    border: none;
+    cursor: pointer;
+    border-bottom: 1px solid rgb(146, 146, 146);
+}
+input:focus{
+    border-bottom: 2px solid #f8d200;
+    outline: none;
+    transition: 0.2s;
+
+}
+label{
+    animation-name: formAnimation;
+    animation-duration: 2s;
+    font-size: 14px;
+    color: #8f8178;
+    margin-left:40px ;
+}
+.button{
+    animation-name: formAnimation;
+    animation-duration: 2s;
+    margin-left: 40px;
+    margin-top: 40px;
+    width: 30%;
+    height:40px;
+    border-radius: 10px;
+    border: 1px solid rgb(146, 146, 146);
+    box-shadow: 1px 1px 4px rgb(185, 185, 185);
+    cursor: pointer;
+}
+.button:hover{
+    background-color: #f8d200;
+    transition: 0.4s;
+    border: 1px solid rgb(198, 197, 197);
+}
+.button:active{
+    box-shadow:1px 1px 4px inset rgb(185, 185, 185);
+}
+@keyframes formAnimation {
+    0%{
+        width: calc(500px/3);
+        height: calc(650px/3);
+        transform: rotateX(360deg) rotate3d(0,0,1,180deg);
+    }
+}
